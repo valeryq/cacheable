@@ -1,0 +1,25 @@
+{
+    "name": "valeryq/cacheable",
+    "description": "Cacheable interface for laravel",
+    "keywords": ["laravel", "cacheable", "cache"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Valery Zakharchenko",
+            "email": "valprogramm@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/contracts": "^5.1",
+        "illuminate/container": "^5.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Valeryq\\Cacheable\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    }
+}
