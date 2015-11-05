@@ -1,7 +1,6 @@
 Laravel Cacheable
 =========
 
-[![Build Status Travis](https://travis-ci.org/valeryq/cacheable.svg?branch=master)](https://travis-ci.org/valeryq/cacheable)
 [![Build Status Scrutinizer](https://scrutinizer-ci.com/g/valeryq/cacheable/badges/build.png?b=master)](https://scrutinizer-ci.com/g/valeryq/cacheable/build-status/master)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/valeryq/cacheable/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/valeryq/cacheable/)
 [![Total Downloads](https://poser.pugx.org/valeryq/cacheable/d/total.svg)](https://packagist.org/packages/valeryq/cacheable)

@@ -1,6 +1,6 @@
 {
     "name": "valeryq/cacheable",
-    "description": "Cacheable interface for laravel",
+    "description": "Laravel Cacheable",
     "keywords": ["laravel", "cacheable", "cache"],
     "license": "MIT",
     "authors": [
