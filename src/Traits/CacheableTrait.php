@@ -1,5 +1,6 @@
 <?php namespace Valeryq\Cacheable\Traits;
 
+use Closure;
 use Illuminate\Contracts\Cache\Repository;
 
 /**
@@ -66,5 +67,40 @@ trait CacheableTrait
         }
 
         return $this->repository;
+    }
+
+    /**
+     * Get an item from the cache, or store the default value.
+     *
+     * @param  string $key
+     * @param  \DateTime|int $minutes
+     * @param  \Closure $callback
+     *
+     * @return mixed
+     */
+    public function remember($key, $minutes, Closure $callback)
+    {
+        if ($this->isForce()) {
+            return $callback();
+        }
+
+        return $this->cache()->remember($key, $minutes, $callback);
+    }
+
+    /**
+     * Get an item from the cache, or store the default value forever.
+     *
+     * @param  string $key
+     * @param \Closure $callback
+     *
+     * @return mixed
+     */
+    public function rememberForever($key, Closure $callback)
+    {
+        if ($this->isForce()) {
+            return $callback();
+        }
+
+        return $this->cache()->rememberForever($key, $callback);
     }
 }
